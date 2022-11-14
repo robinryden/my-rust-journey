@@ -72,6 +72,12 @@ fn main() {
 
     println!("{:?}", coordinates);
 
+    println!("{:#?}", coordinates);
+
+    // We don’t want dbg! to take ownership of coordinates, 
+    // so we use a reference to coordinates
+    dbg!(&coordinates);
+
     let placeholder = Placeholder;
 }
 
